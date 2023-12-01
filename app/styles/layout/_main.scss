@@ -1,0 +1,15 @@
+@use "../index" as *;
+
+$main-padding-y: 10px;
+
+main {
+	// height: calc(100% - $header-height - $footer-height);
+	padding: calc($header-height + $main-padding-y) 0
+		calc($nav-hotspot-height + $main-padding-y);
+	overflow-y: auto;
+	overflow-x: hidden;
+	// margin-top: calc($header-height * 2);
+	// margin-bottom: calc($footer-height + 30px);
+	isolation: isolate;
+	z-index: 0;
+}
