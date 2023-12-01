@@ -1,0 +1,36 @@
+@use "app/styles/" as *;
+
+.Nav {
+	color: $black;
+
+	&Container {
+		@extend .flex-row-between-end;
+		padding: 10px;
+	}
+}
+
+.logo {
+	max-width: 50px;
+
+	@include break-point(tablet) {
+		max-width: 75px;
+	}
+
+	@include break-point(desktop) {
+		max-width: 100px;
+	}
+}
+
+.linkList {
+	@extend .flex-row-end-center;
+	gap: 10px;
+	width: fit-content;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li,
+	a {
+		margin: 0;
+	}
+}

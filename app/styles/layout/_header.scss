@@ -1,7 +1,7 @@
 @use "../index" as *;
 
 header {
-	min-height: $header-height;
+	height: $header-height;
 	// position: fixed;
 	background-color: $header-bg;
 	// box-shadow: $shadow-styles;

@@ -5,19 +5,17 @@ import Header from "./components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Luther Riggs: FE Web Engineer",
-  description: "Luther Riggs is a front end web engineer based in New York City. ",
+	title: "Luther Riggs: FE Web Engineer",
+	description: "Luther Riggs is a front end web engineer based in New York City. ",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <main id="main">
-          <div className="container">{children}</div>
-        </main>
-      </body>
-    </html>
-  );
+	return (
+		<html lang='en'>
+			<body className={inter.className}>
+				<Header />
+				{children}
+			</body>
+		</html>
+	);
 }

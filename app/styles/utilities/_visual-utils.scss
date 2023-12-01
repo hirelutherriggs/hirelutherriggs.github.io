@@ -26,9 +26,11 @@
 }
 
 // SHADOWS --------------------------------------
-// .box-shadow {
-// 	box-shadow: $shadow-styles;
-// }
+$shadow-styles: 2px 1px 6px 0 rgba(0, 0, 0, 0.3);
+
+.box-shadow {
+	box-shadow: $shadow-styles;
+}
 
 // .drop-shadow {
 // 	filter: drop-shadow($shadow-styles);

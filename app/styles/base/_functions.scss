@@ -7,7 +7,7 @@ $base-font-size: 16;
   - this allows us to build a component that is responsive to the font-size of the parent element 
 */
 @function em($pixels, $context: $base-font-size) {
-  @return calc($pixels / $context) * 1em;
+	@return calc($pixels / $context) * 1em;
 }
 /*
   Usage Example:
@@ -27,7 +27,7 @@ $base-font-size: 16;
   - if the user has changed the base font-size of their browser, or adjusted the page zoom, the rems will change proportionally
 */
 @function rem($pixels, $context: $base-font-size) {
-  @return calc($pixels / $context) * 1rem;
+	@return calc($pixels / $context) * 1rem;
 }
 /*
   Usage Example:
@@ -39,3 +39,14 @@ $base-font-size: 16;
       font-size: rem(24); // font-size: 1.5rem;
     }
 */
+
+// Set the top padding of the <main> element so that <main> is not blocked by the header
+@function setMainPaddingTop($value) {
+	// If the $value arg is set to `unset`,
+	@if $value == unset {
+		// then return 0.
+		@return 0;
+	}
+	// Otherwise, return the value.
+	@return $value;
+}

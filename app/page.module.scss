@@ -1,10 +1,26 @@
-@use "./styles" as *;
+@use "./styles/" as *;
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem 0;
-  min-height: 100vh;
+.headerOffset {
+	width: 100%;
+	height: $header-height;
+	background-color: transparent;
+}
+
+.Main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0 60px;
+	// min-height: 100vh;
+
+	section {
+		padding: 30px 0;
+		&:first-of-type {
+			padding-top: 0;
+		}
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
 }

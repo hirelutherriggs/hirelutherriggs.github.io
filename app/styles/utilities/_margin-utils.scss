@@ -1,4 +1,5 @@
 @use "../base/media-queries" as *;
+@use "../base/index.scss" as *;
 
 // margin utilities
 .mt {
@@ -543,4 +544,8 @@
 			}
 		}
 	}
+}
+
+.jump-link-target {
+	scroll-margin-top: $header-height;
 }

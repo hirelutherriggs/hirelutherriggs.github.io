@@ -2,17 +2,15 @@ import React from "react";
 // import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
 import SkipToMain from "./SkipToMain";
-import NavHotspots from "./NavHotspots";
-import NavFull from "./NavFull";
+import Nav from "./Nav";
+// import ScrollToTop from "./ScrollToTop";
 
 const Header = () => {
 	return (
 		<header className={styles.Header}>
 			<SkipToMain />
-			{/* Full Nave to primary pages & settings, options, etc */}
-			<NavFull />
-			{/* Nav hotspots to primary app pages */}
-			<NavHotspots />
+			<Nav />
+			{/* <ScrollToTop /> */}
 		</header>
 	);
 };
