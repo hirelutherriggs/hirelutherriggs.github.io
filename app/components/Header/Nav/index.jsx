@@ -16,10 +16,10 @@ const Nav = () => {
 						<Link href='/#bio'>Bio</Link>
 					</li>
 					<li>
-						<Link href='/#download-resume'>Resume</Link>
+						<Link href='/#resume'>Resume</Link>
 					</li>
 					<li>
-						<Link href='/#contact-form'>Contact</Link>
+						<Link href='/#contact'>Contact</Link>
 					</li>
 				</ul>
 			</div>

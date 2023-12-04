@@ -24,3 +24,18 @@
 		}
 	}
 }
+
+// .flex-wrapper {
+// 	#splash & {
+// 		@extend .flex-column-center-start;
+
+// 		@include break-point(desktop) {
+// 			flex-direction: row;
+// 			align-items: center;
+// 		}
+
+// 		* {
+// 			width: fit-content;
+// 		}
+// 	}
+// }
