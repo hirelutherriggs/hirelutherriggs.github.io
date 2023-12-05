@@ -7,6 +7,12 @@
 		@extend .flex-row-between-end;
 		padding: 10px;
 	}
+
+	a {
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
 }
 
 .logo {

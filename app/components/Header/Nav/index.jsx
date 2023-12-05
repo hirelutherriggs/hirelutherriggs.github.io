@@ -9,7 +9,9 @@ const Nav = () => {
 		<nav className={styles.Nav}>
 			<div className={styles.NavContainer}>
 				<div className={styles.logo}>
-					<Image alt='LCR logo' src={logoLCR} />
+					<Link href='/'>
+						<Image alt='LCR logo' src={logoLCR} />
+					</Link>
 				</div>
 				<ul className={styles.linkList}>
 					<li>
