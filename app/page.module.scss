@@ -1,41 +1,62 @@
 @use "./styles/" as *;
 
-.headerOffset {
-	width: 100%;
-	height: $header-height;
-	background-color: transparent;
-}
-
 .Main {
+	height: calc(100vh - $header-height);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 30px 0 60px;
-	// min-height: 100vh;
 
-	section {
-		padding: 30px 0;
-		&:first-of-type {
-			padding-top: 0;
+	// .imageWrapper {
+	// 	position: relative;
+	// }
+
+	.imageSpinner {
+		transform: rotate(-13deg);
+	}
+
+	img {
+		width: 255px;
+		height: 255px;
+		aspect-ratio: 1;
+		display: block;
+		border-radius: 12px;
+		border: 5px solid $white;
+		outline: 2px solid $black;
+		box-shadow: 9px 8px 17px 0 rgba(0, 0, 0, 0.44);
+	}
+
+	.splash {
+		h1 {
+			font: {
+				size: 48px;
+			}
+			line-height: 1em;
+			text: {
+				align: center;
+			}
+			margin: 8px;
 		}
-		&:last-of-type {
-			padding-bottom: 0;
+
+		p {
+			font: {
+				size: 24px;
+			}
+			line-height: 1em;
+			text: {
+				align: center;
+			}
+		}
+
+		.flexWrapper {
+			@extend .flex-column-start-center;
+			gap: 50px;
+
+			@include break-point(desktop) {
+				flex-direction: row;
+				justify-content: center;
+				align-items: flex-start;
+			}
 		}
 	}
 }
-
-// .flex-wrapper {
-// 	#splash & {
-// 		@extend .flex-column-center-start;
-
-// 		@include break-point(desktop) {
-// 			flex-direction: row;
-// 			align-items: center;
-// 		}
-
-// 		* {
-// 			width: fit-content;
-// 		}
-// 	}
-// }

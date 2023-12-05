@@ -2,10 +2,15 @@
 
 $main-padding-y: 10px;
 
+.header-offset {
+	width: 100%;
+	height: $header-height;
+	background-color: transparent;
+}
+
 main {
 	// height: calc(100% - $header-height - $footer-height);
-	padding: calc($header-height + $main-padding-y) 0
-		calc($nav-hotspot-height + $main-padding-y);
+	// padding: calc($header-height + $main-padding-y) 0 calc($nav-hotspot-height + $main-padding-y);
 	overflow-y: auto;
 	overflow-x: hidden;
 	// margin-top: calc($header-height * 2);

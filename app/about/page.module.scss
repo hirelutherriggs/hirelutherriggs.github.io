@@ -1,0 +1,13 @@
+@use "../styles/" as *;
+
+.Main {
+	section {
+		padding: 30px 0;
+		&:first-of-type {
+			padding-top: 0;
+		}
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+}

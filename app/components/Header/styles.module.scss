@@ -3,8 +3,7 @@
 .Header {
 	@extend .box-shadow;
 	width: 100%;
-	background-color: #0ff;
-	border-bottom: 1px solid $black;
+	border-bottom: 2px solid $black;
 	position: fixed;
 	z-index: 100;
 }

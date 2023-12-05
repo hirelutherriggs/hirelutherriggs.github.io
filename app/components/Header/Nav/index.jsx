@@ -13,13 +13,10 @@ const Nav = () => {
 				</div>
 				<ul className={styles.linkList}>
 					<li>
-						<Link href='/#bio'>Bio</Link>
+						<Link href='/about'>About</Link>
 					</li>
 					<li>
-						<Link href='/#resume'>Resume</Link>
-					</li>
-					<li>
-						<Link href='/#contact'>Contact</Link>
+						<Link href='/portfolio'>Portfolio</Link>
 					</li>
 				</ul>
 			</div>

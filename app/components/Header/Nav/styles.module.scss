@@ -10,7 +10,7 @@
 }
 
 .logo {
-	max-width: 50px;
+	max-width: 40px;
 
 	@include break-point(tablet) {
 		max-width: 75px;
